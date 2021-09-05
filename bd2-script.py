@@ -82,7 +82,7 @@ def torneiosJogador():
     print('\nQuantidade de torneios disputados por cada jogador:\nnome torneios_disputados')
     sleep(0.5)
     comandoSQL = """
-                    SELECT nome, count(nome) AS 'torneios disputados' FROM tenis.tenista, tenis.participar WHERE id = id_tenista GROUP BY nome;
+                    SELECT nome, count(nome) AS 'torneios_disputados' FROM tenis.tenista, tenis.participar WHERE id = id_tenista GROUP BY nome;
                     """
     cursor.execute(comandoSQL)
     linhas = cursor.fetchall()
