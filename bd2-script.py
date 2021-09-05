@@ -4,10 +4,10 @@ from time import sleep
 
 
 con = mysql.connector.connect(
-    host='localhost', 
-    database='tenis', 
-    user='root',
-    password='99887766'
+    host='', 
+    database='', 
+    user='',
+    password=''
 )
 
 
